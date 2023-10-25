@@ -8,7 +8,7 @@ namespace AlexCaicedoRams_Examen1P.Models
 
         [RegularExpression("(^[0-9]+$)", ErrorMessage = "Solo se permiten números")]
         [Required(AllowEmptyStrings = false, ErrorMessage = "El número es obligatorio")]
-        [StringLength(12, ErrorMessage = "El número es demasiado largo")]
+        [StringLength(10, ErrorMessage = "El número es demasiado largo")]
         public int AcCedula { get; set; }
 
         [Required(AllowEmptyStrings = false, ErrorMessage = "El nombre es obligatorio")]
